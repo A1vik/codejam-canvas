@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Codejam canvas</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav class="navbar">
+            <img src="./assets/img/menu-icon-line.png" alt="Menu show/hide" class="navbar__hamburger">
+            <h3 class="navbar__title">CodeJam - Pallete</h3>
+            <img src="./assets/img/menu-icon-dot.png" alt="Menu drag & drop" class="navbar__drag-drop">
+        </nav>
+
+        <div class="tool-panel">
+            <div class="tool">
+                <img class="tool__img" src="./assets/img/bucket.svg" height="24" width="24" alt="Paint bucket">
+                <p class="tool__title">Paint bucket</p>
+            </div>
+            <div class="tool">
+                <img class="tool__img" src="./assets/img/color.svg" height="24" width="24" alt="Choose color">
+                <p class="tool__title">Choose color</p>
+            </div>
+            <div class="tool">
+                <img class="tool__img" src="./assets/img/move.svg" height="24" width="24" alt="Move">
+                <p class="tool__title">Move</p>
+            </div>
+            <div class="tool">
+                <img class="tool__img" src="./assets/img/transform.svg" height="24" width="24" alt="Transform">
+                <p class="tool__title">Transform</p>
+            </div>
+        </div>
+
+        <div class="tool-panel">
+                <div class="tool">
+                    <span class="circle-icon circle-icon--curr"></span>
+                    <p class="tool__title">Current color</p>
+                </div>
+                <div class="tool">
+                    <span class="circle-icon circle-icon--prev"></span>
+                    <p class="tool__title">Prev color</p>
+                </div>
+                <div class="tool">
+                    <span class="circle-icon circle-icon--red"></span>
+                    <p class="tool__title">red</p>
+                </div>
+                <div class="tool">
+                    <span class="circle-icon circle-icon--blue"></span>
+                    <p class="tool__title">blue</p>
+                </div>
+            </div>
+
+            <div class="size-panel">
+                    <button id="size-1">4 x 4</button>
+                    <button id="size-2">32 x 32</button>
+                    <button id="size-3">image</button>
+            </div>
+        <canvas id="canvas" width="512" height="512"></canvas>
+    </div>
+</body>
+<script src="./assets/data/data.js"></script>
+<script src="./script.js"></script>
+</html>
